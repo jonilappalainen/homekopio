@@ -1,0 +1,17 @@
+# list of files to backup
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.claude.json
+.claude/
+.config/
+.gitconfig
+.oh-my-zsh/
+.ssh/
+.tmux.conf
+.z
+.zsh_history
+.zshrc
+Downloads/
+personal/

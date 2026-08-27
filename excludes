@@ -1,0 +1,11 @@
+# exclude these from the files that are being copied
+.local/share/nvim
+.local/share/containers
+.config/nvm/versions
+.config/mozilla/
+.config/chromium/
+.cache
+.m2
+.npm
+node_modules/
+.venv
