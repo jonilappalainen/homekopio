@@ -1,5 +1,5 @@
 
-Backup and crypt your home dir or any other dir. You can give a list of files/dirs to backup and list of excludes to not backup.
+Backup and encrypt your home dir or any other dir. You can give a list of files/dirs to backup and list of excludes to not backup.
 
 
 ## Install
@@ -24,3 +24,5 @@ backup.sh [path/to/.env]
 umount.sh [path/to/.env]
 ```
 
+After init you can just call backup.sh which mounts, copies the files and unmounts. 
+When you need to restore some files from backup you can use the mount.sh to decrypt and mount the backup.
