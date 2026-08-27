@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR=$(dirname "$0")
-source $SCRIPT_DIR/.env
+ENVFILE=${1:-$SCRIPT_DIR/.env}
+source $ENVFILE
 
 fusermount -u $MOUNT_DIR
 

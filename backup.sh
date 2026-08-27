@@ -3,9 +3,8 @@
 set -e
 
 SCRIPT_DIR=$(dirname "$0")
-source $SCRIPT_DIR/.env
-INCLUDES_FILE=${SCRIPT_DIR}/files
-EXCLUDES_FILE=${SCRIPT_DIR}/excludes
+ENVFILE=${1:-$SCRIPT_DIR/.env}
+source $ENVFILE
 
 # mount
 GOCRYPTFS="$ENCRYPTED_DIR/gocryptfs.conf"

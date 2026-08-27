@@ -8,19 +8,19 @@ Requires gocryptfs and rsync.
 
 ## Usage:
 
-Setup the environment variables in .env and "files" and "excludes"
+Setup the environment variables in .env and "files" and "excludes". You can also give the env file as parameter. The env file has path to files and excludes.
 
 ```
 # init (only once)
-init.sh
+init.sh [path/to/.env]
 
 # mount to decrypt
-mount.sh
+mount.sh [path/to/.env]
 
 # backup home (except excludes)
-backup.sh
+backup.sh [path/to/.env]
 
 # unmount to stop using
-umount.sh
+umount.sh [path/to/.env]
 ```
 
