@@ -5,11 +5,13 @@ ENVFILE=${1:-$SCRIPT_DIR/.env}
 source $ENVFILE
 is_mounted=false
 
+mkdir $MOUNT_DIR
+
 if [ "$USE_GOCRYPT" = "true" ]; then
   # mount
   GOCRYPTFS="$ENCRYPTED_DIR/gocryptfs.conf"
   if [ ! -f "$GOCRYPTFS" ]; then
-    echo "Invalid ENCRYPTED_DIR $ENCRYPTED_DIR"
+    echo "Cannot find $GOCRYPTFS"
     exit 1
   fi
   if [ ! -d "$MOUNT_DIR" ]; then
